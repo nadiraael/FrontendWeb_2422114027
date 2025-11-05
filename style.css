@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    background-color: #fff;
+  }
+  
+  /* ===== HEADER ===== */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    z-index: 1000;
+  }
+  
+  .logo {
+    color: #ff8c00;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* ===== LAYOUT ===== */
+  .container {
+    display: flex;
+    height: calc(100vh - 60px);
+    margin-top: 60px; /* agar tidak tertutup header */
+  }
+  
+  /* KIRI */
+  .left {
+    flex: 1;
+    background-color: #fff8dc; /* kuning lembut */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff8c00;
+  }
+  
+  .text-content {
+    width: 70%;
+    position: relative;
+  }
+  
+  .text-content h1 {
+    font-size: 2.5rem;
+    color: #ff8c00;
+    font-weight: bold;
+    animation: fadeInOut 2.5s ease-in-out infinite;
+  }
+  
+  .text-content p {
+    font-size: 1.25rem;
+    color: #444;
+    margin-top: 0.5rem;
+  }
+  
+  /* Efek animasi teks */
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; transform: translateY(10px); }
+    10%, 90% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* KANAN */
+  .right {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-box {
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn.primary {
+    background-color: #0a66c2;
+    color: white;
+  }
+  
+  .btn.secondary {
+    background-color: white;
+    border: 1px solid #0a66c2;
+    color: #0a66c2;
+  }
+  
+  .try-link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-links {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .footer-links a {
+    color: #777;
+    text-decoration: none;
+    margin: 0 0.25rem;
+  }
+  
+  /* FOOTER (COOKIE) */
+  footer {
+    height: 60px;
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .cookie-buttons button {
+    margin-left: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .cookie-buttons button:hover {
+    background-color: #eee;
+  }

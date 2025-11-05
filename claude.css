@@ -1,0 +1,510 @@
+:root {
+    --bg: #f5f3f0;
+    --paper: #ffffff;
+    --text: #1f1f1f;
+    --muted: #666666;
+    --accent: #ca6239;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tiempos Text', Georgia, serif;
+    color: var(--text);
+    background-color: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    gap: 16px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo::before {
+    content: "⚡"
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 14px
+}
+
+.try-claude-btn {
+    background: var(--text);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px
+}
+
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    padding: 80px 24px;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.05;
+    margin-bottom: 18px;
+    font-weight: 400
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 28px
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 420px
+}
+
+.google-btn {
+    padding: 12px 16px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+.divider {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin: 6px 0
+}
+
+.email-input {
+    padding: 12px 16px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    font-size: 14px
+}
+
+.continue-btn {
+    padding: 12px 16px;
+    background: var(--text);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.terms {
+    font-size: 12px;
+    color: #999
+}
+
+.hero-image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block
+}
+
+/* ====== Meet Claude Section ====== */
+.meet-claude {
+    background: var(--paper);
+    padding: 80px 24px
+}
+
+.meet-claude h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 18px;
+    font-weight: 400;
+    color: var(--text)
+}
+
+.meet-claude p.intro {
+    text-align: center;
+    font-size: 17px;
+    color: var(--muted);
+    max-width: 720px;
+    margin: 0 auto 48px;
+    line-height: 1.6
+}
+
+.meet-claude-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap
+}
+
+.meet-claude-image video {
+    width: 520px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    display: block
+}
+
+.meet-claude-features {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.feature-item {
+    border-left: 3px solid transparent;
+    padding-left: 16px;
+    transition: all 0.25s ease;
+    cursor: pointer
+}
+
+.feature-item.active {
+    border-left-color: #1f1f1f;
+}
+
+.feature-item:hover {
+    border-left-color: #1f1f1f;
+}
+
+.feature-item h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+.feature-item p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 80px 24px;
+    background: var(--bg)
+}
+
+.pricing h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 28px;
+    font-weight: 400
+}
+
+/* Pricing Tabs Style (baru) */
+.pricing-tabs {
+  display: flex;
+  justify-content: center; /* 🔥 Posisi tombol ke tengah horizontal */
+  align-items: center;
+  gap: 4px; /* Jarak kecil antar tombol */
+  background-color: #f3f1eb; /* Warna abu lembut seperti contoh */
+  padding: 4px;
+  border-radius: 12px;
+  width: fit-content; /* 🔥 Supaya kotaknya hanya selebar tombol */
+  margin: 0 auto 60px; /* 🔥 Supaya blok tab-nya di tengah halaman */
+}
+
+.pricing-tab {
+  padding: 10px 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.pricing-tab.active {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 0 1px #ddd inset; /* garis halus di tepi tombol aktif */
+}
+
+.pricing-tab:hover {
+  color: #000;
+}
+
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* 🔥 buat tinggi semua card sejajar */
+  gap: 32px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.pricing-card {
+  background: var(--paper);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  flex: 1 1 300px; /* 🔥 fleksibel tapi tetap sejajar */
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 560px; /* 🔥 samakan tinggi */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+.pricing-card h3 {
+    font-size: 22px;
+    margin-bottom: 6px;
+    font-weight: 600
+}
+
+.pricing-card .subtitle {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 14px
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 6px
+}
+
+.price-detail {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 18px
+}
+
+.pricing-btn {
+    width: 100%;
+    padding: 12px 14px;
+    background: var(--text);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+.features-list {
+    list-style: none;
+    margin-top: 8px
+}
+
+.features-list li {
+    padding: 6px 0;
+    font-size: 14px;
+    color: var(--muted);
+    position: relative;
+    padding-left: 26px
+}
+
+.features-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700
+}
+
+/* FAQ Section */
+.faq {
+    padding: 80px 24px;
+    max-width: 800px;
+    margin: 0 auto
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 400
+}
+
+.faq-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 25px 0;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question::after {
+    content: "+";
+    font-size: 24px;
+}
+
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 60px 24px 40px
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto 40px
+}
+
+.footer-column h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #999;
+    font-weight: 500
+}
+
+
+.footer-column ul {
+    list-style: none
+}
+
+.footer-column ul li {
+    margin-bottom: 8px
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid #333
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #999;
+    margin: 6px 0
+}
+
+
+/* helpers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0
+}
+
+.meet-claude-image video {
+    width: 520px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    display: block
+}
+
+@media (max-width:768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 48px 16px
+    }
+
+    .hero-content h1 {
+        font-size: 36px
+    }
+
+    .meet-claude-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 28px
+    }
+
+    .meet-claude-image video {
+        width: 100%;
+        max-width: 520px
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .feature-item {
+        border-left: none;
+        border-top: 2px solid #eee;
+        padding-top: 12px;
+        padding-left: 0
+    }
+}

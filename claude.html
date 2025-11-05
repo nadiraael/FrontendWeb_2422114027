@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude - AI Assistant</title>
+    <link rel="stylesheet" href="claude.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">Claude</div>
+            <ul class="nav-links">
+                <li><a href="#">Meet Claude</a></li>
+                <li><a href="#">Platform</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Contact sales</a></li>
+            </ul>
+            <a href="#" class="try-claude-btn">Try Claude</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Impossible? Possible.</h1>
+            <p>The AI for problem solvers</p>
+
+            <form class="signup-form" aria-label="Sign up form">
+                <button type="button" class="google-btn" aria-label="Continue with Google">Continue with Google</button>
+                <div class="divider" aria-hidden="true">OR</div>
+                <label for="email" class="sr-only">Email address</label>
+                <input id="email" name="email" type="email" class="email-input" placeholder="Enter your email" required />
+                <button type="submit" class="continue-btn">Continue with email</button>
+                <p class="terms">
+                    By continuing, you acknowledge that you have read and agree to our
+                    <a href="#">Privacy Policy</a>.
+                </p>
+            </form>
+        </div>
+        <figure class="hero-image" aria-hidden="true">
+            <video autoplay muted loop playsinline>
+                <source src="./claude_login.mp4" type="video/mp4" />
+                <!-- fallback content -->
+            </video>
+        </figure>
+    </section>
+
+    <!-- Meet Claude Section -->
+    <section class="meet-claude">
+        <h2>Meet Claude</h2>
+        <p class="intro">
+            Claude is a next generation AI assistant built by Anthropic and trained to be
+            safe, accurate, and secure to help you do your best work.
+        </p>
+
+        <div class="meet-claude-container">
+            <figure class="meet-claude-image" aria-hidden="true">
+                <video autoplay muted loop playsinline>
+                    <source src="./create.mp4" type="video/mp4" />
+                </video>
+            </figure>
+
+            <div class="meet-claude-features">
+                <div class="feature-item active" tabindex="0">
+                    <h3>📝 Create with Claude</h3>
+                    <p>Draft and iterate on writing, graphics, documents, and code alongside your AI partner.</p>
+                </div>
+                <div class="feature-item" tabindex="0">
+                    <h3>🧠 Bring your knowledge</h3>
+                    <p>Upload files or connect tools so Claude can use your context to help you better.</p>
+                </div>
+                <div class="feature-item" tabindex="0">
+                    <h3>👥 Share and collaborate with your team</h3>
+                    <p>Work together and stay in sync with shared projects and Claude’s insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+   <section class="pricing">
+  <h2>Explore plans</h2>
+
+  <div class="pricing-tabs" role="tablist" aria-label="Pricing tabs">
+    <button class="pricing-tab active" role="tab" aria-selected="true">Individual</button>
+    <button class="pricing-tab" role="tab">Team &amp; Enterprise</button>
+  </div>
+
+  <!-- 🔥 Kartu pricing dimasukkan di dalam satu .pricing-cards -->
+  <div class="pricing-cards">
+    <div class="pricing-card">
+      <h3>Free</h3>
+      <p class="subtitle">Try Claude</p>
+      <div class="price">$0</div>
+      <p class="price-detail">per person</p>
+      <button class="pricing-btn">Try Claude</button>
+      <ul class="features-list">
+        <li>Chat with Claude via web, iOS, and Android</li>
+        <li>Write, edit, and create content</li>
+        <li>Analyze text and upload images</li>
+        <li>Generate code and execute tasks</li>
+        <li>Get near-instant helpful chat</li>
+      </ul>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Pro</h3>
+      <p class="subtitle">For everyday productivity</p>
+      <div class="price">$17</div>
+      <p class="price-detail">per person/month when billed annually.<br> $20/m billed monthly.</p>
+      <button class="pricing-btn">Try Claude</button>
+      <ul class="features-list">
+        <li>Everything in Free, plus:</li>
+        <li>Access priority to Claude 4 models</li>
+        <li>More usage than the free plan</li>
+        <li>Create and update Claude Projects</li>
+        <li>Upload more Research Mode</li>
+        <li>Advanced thinking for complex work</li>
+        <li>Google Workspace integration</li>
+        <li>Includes Claude Code</li>
+      </ul>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Max</h3>
+      <p class="subtitle">5–10× more usage than Pro</p>
+      <div class="price">From $100</div>
+      <p class="price-detail">per seat/month</p>
+      <button class="pricing-btn">Try Claude</button>
+      <ul class="features-list">
+        <li>Everything in Pro, plus:</li>
+        <li>Higher output limits for Claude 4</li>
+        <li>Early access to new features</li>
+        <li>Priority access at busy times</li>
+        <li>Includes Claude Code</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">What is Claude and how does it work?</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What should I use Claude for?</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How much does it cost to use?</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#">Claude</a></li>
+                    <li><a href="#">Claude Pro</a></li>
+                    <li><a href="#">Max plan</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                    <li><a href="#">Team plan</a></li>
+                    <li><a href="#">Haiku</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#">All Solutions</a></li>
+                    <li><a href="#">Claude for Work</a></li>
+                    <li><a href="#">Coding</a></li>
+                    <li><a href="#">Enterprise AI</a></li>
+                    <li><a href="#">AI Safety Research</a></li>
+                    <li><a href="#">Customer stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Learn</h4>
+                <ul>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Developer docs</a></li>
+                    <li><a href="#">Claude stories</a></li>
+                    <li><a href="#">Courses and Webinars</a></li>
+                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">Trust and safety</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Get Started</h4>
+                <ul>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Try for free</a></li>
+                    <li><a href="#">Talk to sales</a></li>
+                    <li><a href="#">Support center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>BY ANTHROPIC</p>
+            <p>© 2025 Anthropic PBC</p>
+        </div>
+    </footer>
+</body>
+
+</html>
